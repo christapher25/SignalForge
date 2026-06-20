@@ -1,0 +1,1 @@
+import sys; sys.path.append('.'); from signals.signal_generator import generate_signal; print(generate_signal('AAPL', 'INTRADAY'))

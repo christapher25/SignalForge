@@ -1,0 +1,14 @@
+.env
+.venv/
+env/
+db/*.db
+chroma_db/
+data/
+logs/
+ml/models/*.pkl
+__pycache__/
+*.pyc
+.idea/
+*.cache
+*.cache
+*.sqlite3

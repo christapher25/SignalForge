@@ -1,0 +1,107 @@
+[
+    {
+        "window": 1,
+        "train_start": "2004-01-02",
+        "train_end": "2006-08-18",
+        "val_start": "2006-08-21",
+        "val_end": "2007-12-12"
+    },
+    {
+        "window": 2,
+        "train_start": "2004-01-02",
+        "train_end": "2007-12-12",
+        "val_start": "2007-12-13",
+        "val_end": "2009-04-07"
+    },
+    {
+        "window": 3,
+        "train_start": "2004-01-02",
+        "train_end": "2009-04-07",
+        "val_start": "2009-04-08",
+        "val_end": "2010-07-30"
+    },
+    {
+        "window": 4,
+        "train_start": "2004-01-02",
+        "train_end": "2010-07-30",
+        "val_start": "2010-08-02",
+        "val_end": "2011-11-18"
+    },
+    {
+        "window": 5,
+        "train_start": "2004-01-02",
+        "train_end": "2011-11-18",
+        "val_start": "2011-11-21",
+        "val_end": "2013-03-19"
+    },
+    {
+        "window": 6,
+        "train_start": "2004-01-02",
+        "train_end": "2013-03-19",
+        "val_start": "2013-03-20",
+        "val_end": "2014-07-11"
+    },
+    {
+        "window": 7,
+        "train_start": "2004-01-02",
+        "train_end": "2014-07-11",
+        "val_start": "2014-07-14",
+        "val_end": "2015-11-02"
+    },
+    {
+        "window": 8,
+        "train_start": "2004-01-02",
+        "train_end": "2015-11-02",
+        "val_start": "2015-11-03",
+        "val_end": "2017-02-27"
+    },
+    {
+        "window": 9,
+        "train_start": "2004-01-02",
+        "train_end": "2017-02-27",
+        "val_start": "2017-02-28",
+        "val_end": "2018-06-20"
+    },
+    {
+        "window": 10,
+        "train_start": "2004-01-02",
+        "train_end": "2018-06-20",
+        "val_start": "2018-06-21",
+        "val_end": "2019-10-14"
+    },
+    {
+        "window": 11,
+        "train_start": "2004-01-02",
+        "train_end": "2019-10-14",
+        "val_start": "2019-10-15",
+        "val_end": "2021-02-05"
+    },
+    {
+        "window": 12,
+        "train_start": "2004-01-02",
+        "train_end": "2021-02-05",
+        "val_start": "2021-02-08",
+        "val_end": "2022-05-31"
+    },
+    {
+        "window": 13,
+        "train_start": "2004-01-02",
+        "train_end": "2022-05-31",
+        "val_start": "2022-06-01",
+        "val_end": "2023-09-25"
+    },
+    {
+        "window": 14,
+        "train_start": "2004-01-02",
+        "train_end": "2023-09-25",
+        "val_start": "2023-09-26",
+        "val_end": "2025-01-21"
+    },
+    {
+        "window": 15,
+        "train_start": "2004-01-02",
+        "train_end": "2025-01-21",
+        "val_start": "2025-01-22",
+        "val_end": "2026-05-15"
+    }
+]
