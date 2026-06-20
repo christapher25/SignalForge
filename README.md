@@ -177,10 +177,26 @@ python verify_env.py
 python db/database.py
 ```
 
+### 🗓️ Weekday Operations *(Market Days)*
+
 ```bash
-# Production entrypoints
-python run_bot.py     # Telegram bot + subscriber-facing layer
-python run_news.py    # Live news ingestion + FinBERT scoring daemon
+python rag/chunker.py          # Process any same-day 8-K filings into chunks
+python run_news.py             # Live news ingestion + FinBERT scoring daemon
+python rag/chroma_sync.py      # Sync refreshed chunks into ChromaDB
+python pipeline/rag_updater.py # Reconcile RAG store with latest filings
+python pipeline/alpaca_feed.py # Live tick WebSocket — market hours only
+uvicorn api.main:app --reload  # FastAPI signal + webhook endpoints
+python delivery/scheduler.py   # Telegram delivery + daily learning loop
+python run_bot.py              # Telegram bot — subscriber-facing layer
+```
+
+### 🗓️ Weekend Operations *(Maintenance Cycle)*
+
+```bash
+python pipeline/fetch_sec.py   # Pull newly published 10-K / 10-Q filings
+python pipeline/rag_updater.py # Reconcile RAG store with latest filings
+python rag/chunker.py          # Chunk new filings into embedding-ready segments
+python rag/chroma_sync.py      # Sync new chunks into ChromaDB
 ```
 
 > Full task-by-task build documentation, including the data pipeline bootstrap sequence and model training steps, is maintained internally.
